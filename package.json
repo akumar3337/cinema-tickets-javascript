@@ -7,6 +7,12 @@
   },
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm clean-install",
+    "coverage": "vitest run --coverage",
+    "test": "vitest"
   },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.0.18",
+    "vitest": "^4.0.18"
+  }
 }
